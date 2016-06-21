@@ -1,11 +1,29 @@
+# Running functional tests gives an error relating to selenium (june 21). Tried the following solutions:
+# - install xvfb and pyvirtualdisplay
+# - installed and ran the latest version of selenium (gecko driver/marionette)
+# - Tried to change the $DISPLAY to something else than 0
+# - Downgraded Firefox from version 47 to 46.
+# None of these solutions worked. Fuck it. Ended up installing chromedriver and switching to chrome for testint
+
+
 from selenium import webdriver
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.common.keys import Keys
 import unittest
 
 class NewVisitorTest(unittest.TestCase):
 
     def setUp(self):
-        self.browser = webdriver.Firefox()
+        outputdir = '/home/rosien/projects/tdd'
+        options = webdriver.ChromeOptions()
+        options.binary_location = '/usr/bin/google-chrome'
+        service_log_path = "{}/chromedriver.log".format(outputdir)
+        service_args = ['--verbose']
+        self.browser = webdriver.Chrome('/home/rosien/chromedriver',
+                                        chrome_options=options,
+                                        service_args=service_args,
+                                        service_log_path=service_log_path)
+
         self.browser.implicitly_wait(3)
 
     def tearDown(self):

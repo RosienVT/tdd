@@ -14,15 +14,15 @@ from selenium.webdriver.common.keys import Keys
 class NewVisitorTest(LiveServerTestCase):
 
     def setUp(self):
-        outputdir = '/home/rosien/projects/tdd'
-        options = webdriver.ChromeOptions()
-        options.binary_location = '/usr/bin/google-chrome'
-        service_log_path = "{}/chromedriver.log".format(outputdir)
-        service_args = ['--verbose']
+        self.outputdir = '/home/rosien/projects/tdd'
+        self.options = webdriver.ChromeOptions()
+        self.options.binary_location = '/usr/bin/google-chrome'
+        self.service_log_path = "{}/chromedriver.log".format(self.outputdir)
+        self.service_args = ['--verbose']
         self.browser = webdriver.Chrome('/home/rosien/chromedriver',
-                                        chrome_options=options,
-                                        service_args=service_args,
-                                        service_log_path=service_log_path)
+                                        chrome_options=self.options,
+                                        service_args=self.service_args,
+                                        service_log_path=self.service_log_path)
 
         self.browser.implicitly_wait(3)
 
@@ -79,7 +79,11 @@ class NewVisitorTest(LiveServerTestCase):
         ## We use a new browser session to make sure that no information
         ## of Edithś is coming through from cookies etc
         self.browser.quit()
-        self.browser = webdriver.Chrome()
+        # self.browser = webdriver.Chrome()
+        self.browser = webdriver.Chrome('/home/rosien/chromedriver',
+                                        chrome_options=self.options,
+                                        service_args=self.service_args,
+                                        service_log_path=self.service_log_path)
 
         # Francis visits the home page. There is no sign of Edith's
         # list

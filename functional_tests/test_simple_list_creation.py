@@ -1,3 +1,5 @@
+from django.contrib.staticfiles.testing import StaticLiveServerTestCase
+
 from .base import FunctionalTest
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -73,6 +75,6 @@ class NewVisitorTest(StaticLiveServerTestCase):
         # Again, there is no trace of Edith's list
         page_text = self.browser.find_element_by_tag_name('body').text
         self.assertNotIn('Buy peacock feathers', page_text)
-        self.assertIn('Buy milk', page_tee
+        self.assertIn('Buy milk', page_tee)
 
         # Satisfied, they both go back to sleep

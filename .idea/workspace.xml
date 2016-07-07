@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30aeab74-3d16-45a4-bd6d-07606093264d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chromedriver.log" afterPath="$PROJECT_DIR$/chromedriver.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functional_tests/base.py" afterPath="$PROJECT_DIR$/functional_tests/base.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functional_tests/test_layout_and_styling.py" afterPath="$PROJECT_DIR$/functional_tests/test_layout_and_styling.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functional_tests/test_list_item_validation.py" afterPath="$PROJECT_DIR$/functional_tests/test_list_item_validation.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functional_tests/test_simple_list_creation.py" afterPath="$PROJECT_DIR$/functional_tests/test_simple_list_creation.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lists/static/base.css" afterPath="$PROJECT_DIR$/lists/static/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lists/tests/test_views.py" afterPath="$PROJECT_DIR$/lists/tests/test_views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lists/views.py" afterPath="$PROJECT_DIR$/lists/views.py" />
     </list>
     <ignored path="tdd.iws" />
@@ -113,8 +106,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lists/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="29" column="62" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
+            <state relative-caret-position="195">
+              <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -167,8 +160,8 @@
         <option value="$PROJECT_DIR$/functional_tests/test_list_item_validation.py" />
         <option value="$PROJECT_DIR$/functional_tests/test_layout_and_styling.py" />
         <option value="$PROJECT_DIR$/lists/static/base.css" />
-        <option value="$PROJECT_DIR$/lists/views.py" />
         <option value="$PROJECT_DIR$/lists/tests/test_views.py" />
+        <option value="$PROJECT_DIR$/lists/views.py" />
       </list>
     </option>
   </component>
@@ -886,8 +879,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lists/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="29" column="62" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
+        <state relative-caret-position="195">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
